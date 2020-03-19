@@ -20,6 +20,10 @@ module.exports = {
 
             },
             {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
                 test: /\.(gif|png|jpe?g|svg|webp)$/i,
                 use: [
                     "file-loader",
@@ -52,8 +56,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack app',
-            script: 'src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">'
+            filename: "index.html",
+            template: "src/index.html"
         })
     ],
     devServer: {
