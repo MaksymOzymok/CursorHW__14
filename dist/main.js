@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -451,7 +451,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getCharacter; });\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\r\n\r\nasync function getCharacter(value){\r\n    return await axios.get(value);\r\n}\n\n//# sourceURL=webpack:///./src/getCharacter.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getCharacter; });\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nvar axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\nfunction getCharacter(_x) {\n  return _getCharacter.apply(this, arguments);\n}\n\nfunction _getCharacter() {\n  _getCharacter = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(value) {\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return axios.get(value);\n\n          case 2:\n            return _context.abrupt(\"return\", _context.sent);\n\n          case 3:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n  return _getCharacter.apply(this, arguments);\n}\n\n//# sourceURL=webpack:///./src/getCharacter.js?");
 
 /***/ }),
 
@@ -463,7 +463,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getFilmCharactersApi; });\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\r\nconst BASE  = 'https://swapi.co/api/';\r\n\r\nasync function getFilmCharactersApi(film=2) {\r\n\r\n    //k.start();\r\n    const info = await axios.get(BASE + `films/${film}/`);\r\n    return info.data.characters;\r\n}\r\n\r\n\n\n//# sourceURL=webpack:///./src/getCharactersApi.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getFilmCharactersApi; });\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nvar axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\nvar BASE = 'https://swapi.co/api/';\nfunction getFilmCharactersApi() {\n  return _getFilmCharactersApi.apply(this, arguments);\n}\n\nfunction _getFilmCharactersApi() {\n  _getFilmCharactersApi = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n    var film,\n        info,\n        _args = arguments;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            film = _args.length > 0 && _args[0] !== undefined ? _args[0] : 2;\n            _context.next = 3;\n            return axios.get(BASE + \"films/\".concat(film, \"/\"));\n\n          case 3:\n            info = _context.sent;\n            return _context.abrupt(\"return\", info.data.characters);\n\n          case 5:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n  return _getFilmCharactersApi.apply(this, arguments);\n}\n\n//# sourceURL=webpack:///./src/getCharactersApi.js?");
 
 /***/ }),
 
@@ -475,7 +475,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nlet ladaPrice = 15.678, audiPrice = 123.965, bmwPrice = 90.2345;\r\n\r\nlet maxPrice = Math.max(ladaPrice,audiPrice,bmwPrice);\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (maxPrice);\n\n//# sourceURL=webpack:///./src/hw1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar ladaPrice = 15.678,\n    audiPrice = 123.965,\n    bmwPrice = 90.2345;\nvar maxPrice = Math.max(ladaPrice, audiPrice, bmwPrice);\n/* harmony default export */ __webpack_exports__[\"default\"] = (maxPrice);\n\n//# sourceURL=webpack:///./src/hw1.js?");
 
 /***/ }),
 
@@ -487,7 +487,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nlet ladaPrice = 15.678, audiP
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return isEven; });\nfunction isEven(n) {\r\n    return n % 2 === 0;\r\n}\n\n//# sourceURL=webpack:///./src/hw2.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return isEven; });\nfunction isEven(n) {\n  return n % 2 === 0;\n}\n\n//# sourceURL=webpack:///./src/hw2.js?");
 
 /***/ }),
 
@@ -499,7 +499,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getMaxNumber; });\nfunction getMaxNumber(k=123) {\r\n    let n = k.toString();\r\n    let max = n[0];\r\n    for(let i = 0;i<n.length;i++){\r\n        if(n[i]>max){\r\n            max = n[i];\r\n        }\r\n    }\r\n    return max;\r\n}\n\n//# sourceURL=webpack:///./src/hw3.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getMaxNumber; });\nfunction getMaxNumber() {\n  var k = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 123;\n  var n = k.toString();\n  var max = n[0];\n\n  for (var i = 0; i < n.length; i++) {\n    if (n[i] > max) {\n      max = n[i];\n    }\n  }\n\n  return max;\n}\n\n//# sourceURL=webpack:///./src/hw3.js?");
 
 /***/ }),
 
@@ -511,7 +511,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return makePairs; });\nfunction makePairs(names){\r\n    const result =[];\r\n    for (let i=1;i<names.length;i++) {\r\n        if(i%2!==0){\r\n            result.push(names.slice(i-1,i+1));\r\n        }\r\n    }\r\n    return result;\r\n}\n\n//# sourceURL=webpack:///./src/hw4.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return makePairs; });\nfunction makePairs(names) {\n  var result = [];\n\n  for (var i = 1; i < names.length; i++) {\n    if (i % 2 !== 0) {\n      result.push(names.slice(i - 1, i + 1));\n    }\n  }\n\n  return result;\n}\n\n//# sourceURL=webpack:///./src/hw4.js?");
 
 /***/ }),
 
@@ -535,7 +535,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hw1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hw1 */ \"./src/hw1.js\");\n/* harmony import */ var _hw2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hw2 */ \"./src/hw2.js\");\n/* harmony import */ var _hw3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hw3 */ \"./src/hw3.js\");\n/* harmony import */ var _hw4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hw4 */ \"./src/hw4.js\");\n/* harmony import */ var _getCharactersApi__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./getCharactersApi */ \"./src/getCharactersApi.js\");\n/* harmony import */ var _renderCharacters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./renderCharacters */ \"./src/renderCharacters.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_6__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log('maxPrice from hw#1  ' + _hw1__WEBPACK_IMPORTED_MODULE_0__[\"default\"] );\r\n\r\nconsole.log('Checking if number = 5 is even from hw#2  ' + Object(_hw2__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(5));\r\n\r\nconsole.log('get max number from 123  ' + Object(_hw3__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(123));\r\n\r\nconsole.log('make pairs from array [\"Саша\",\"Игорь\",\"Лена\",\"Ира\"]   ',Object(_hw4__WEBPACK_IMPORTED_MODULE_3__[\"default\"])([\"Саша\",\"Игорь\",\"Лена\",\"Ира\"]));\r\n\r\nObject(_getCharactersApi__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(2)\r\n    .then(_renderCharacters__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hw1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hw1 */ \"./src/hw1.js\");\n/* harmony import */ var _hw2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hw2 */ \"./src/hw2.js\");\n/* harmony import */ var _hw3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hw3 */ \"./src/hw3.js\");\n/* harmony import */ var _hw4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hw4 */ \"./src/hw4.js\");\n/* harmony import */ var _getCharactersApi__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./getCharactersApi */ \"./src/getCharactersApi.js\");\n/* harmony import */ var _renderCharacters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./renderCharacters */ \"./src/renderCharacters.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\nconsole.log('maxPrice from hw#1  ' + _hw1__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nconsole.log('Checking if number = 5 is even from hw#2  ' + Object(_hw2__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(5));\nconsole.log('get max number from 123  ' + Object(_hw3__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(123));\nconsole.log('make pairs from array [\"Саша\",\"Игорь\",\"Лена\",\"Ира\"]   ', Object(_hw4__WEBPACK_IMPORTED_MODULE_3__[\"default\"])([\"Саша\", \"Игорь\", \"Лена\", \"Ира\"]));\nObject(_getCharactersApi__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(2).then(_renderCharacters__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -547,7 +547,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hw1
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return renderCharacters; });\n/* harmony import */ var _getCharacter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getCharacter */ \"./src/getCharacter.js\");\n/* harmony import */ var _img_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/background.jpg */ \"./src/img/background.jpg\");\n\r\n\r\n\r\nasync function renderCharacters(apis) {\r\n    //let result = [];\r\n    const container = document.createElement('div');\r\n    container.className = 'container';\r\n    container.style.backgroundImage = `url(${_img_background_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]})`;\r\n    container.style.backgroundRepeat = 'no-repeat';\r\n    container.style.backgroundSize = 'cover';\r\n    document.body.appendChild(container);\r\n    apis.forEach(api => {\r\n        Object(_getCharacter__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(api).then(value => {\r\n            const divUser = document.createElement('div');\r\n            divUser.className = 'character';\r\n            divUser.innerHTML = `\r\n     <p>name: ${value.data.name} <br>\r\n        birth: ${value.data.birth_year}<br>\r\n        male: ${value.data.gender}\r\n        </p>`;\r\n            container.append(divUser);\r\n        });\r\n    });\r\n}\n\n//# sourceURL=webpack:///./src/renderCharacters.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return renderCharacters; });\n/* harmony import */ var _getCharacter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getCharacter */ \"./src/getCharacter.js\");\n/* harmony import */ var _img_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/background.jpg */ \"./src/img/background.jpg\");\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n\n\nfunction renderCharacters(_x) {\n  return _renderCharacters.apply(this, arguments);\n}\n\nfunction _renderCharacters() {\n  _renderCharacters = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(apis) {\n    var container;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            //let result = [];\n            container = document.createElement('div');\n            container.className = 'container';\n            container.style.backgroundImage = \"url(\".concat(_img_background_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"], \")\");\n            container.style.backgroundRepeat = 'no-repeat';\n            container.style.backgroundSize = 'cover';\n            document.body.appendChild(container);\n            apis.forEach(function (api) {\n              Object(_getCharacter__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(api).then(function (value) {\n                var divUser = document.createElement('div');\n                divUser.className = 'character';\n                divUser.innerHTML = \"\\n     <p>name: \".concat(value.data.name, \" <br>\\n        birth: \").concat(value.data.birth_year, \"<br>\\n        male: \").concat(value.data.gender, \"\\n        </p>\");\n                container.append(divUser);\n              });\n            });\n\n          case 7:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n  return _renderCharacters.apply(this, arguments);\n}\n\n//# sourceURL=webpack:///./src/renderCharacters.js?");
 
 /***/ }),
 
@@ -559,6 +559,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/style.css?");
+
+/***/ }),
+
+/***/ 0:
+/*!****************************!*\
+  !*** multi ./src/index.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! C:\\Users\\Zver\\Desktop\\CursorHW__14\\src/index.js */\"./src/index.js\");\n\n\n//# sourceURL=webpack:///multi_./src/index.js?");
 
 /***/ })
 
